@@ -25,7 +25,7 @@ Composer経由でインストールします。
 ```json
 {
 	"require": {
-		"suin/php-dmm": "1.*"
+		"suin/php-dmm": "1"
 	}
 }
 ```
