@@ -39,14 +39,14 @@ class Client implements \DMM\ClientInterface
 	 */
 	public function request(array $query)
 	{
-		$query = array(
+		$query = array_merge(array(
 			'api_id'       => $this->apiId,
 			'affiliate_id' => $this->affiliateId,
 			'operation'    => 'ItemList',
 			'version'      => '1.00',
 			'timestamp'    => date('Y-m-d H:i:s'),
 			'site'         => 'DMM.com',
-		) + $query;
+		), $query);
 		$query['keyword'] = mb_convert_encoding($query['keyword'], 'EUC-JP', 'UTF-8');
 
 		$url = 'http://affiliate-api.dmm.com/?'.http_build_query($query);
