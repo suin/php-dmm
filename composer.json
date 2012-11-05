@@ -2,7 +2,7 @@
 	"name": "suin/php-dmm",
 	"type": "library",
 	"description": "DMM.com item search API library.",
-	"keywords": ["dmm.com", "dmm"],
+	"keywords": ["dmm"],
 	"homepage": "https://github.com/suin/php-dmm",
 	"license": "MIT",
 	"authors": [
